@@ -144,3 +144,19 @@ body {
 .training-mode:hover{
   transform: translateY(-4px);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+  /* 🔥 Heartbeat Animation */
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.05); }
+  40%  { transform: scale(1); }
+  60%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.heartbeat:hover {
+  animation: none;
+}
