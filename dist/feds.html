@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CodesNLogic | Development • Training • Placements</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<style>
+
+body{
+font-family:Inter;
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* particles */
+
+#particles-js{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* glow button */
+
+.glow-btn{
+border:1px solid #06b6d4;
+box-shadow:0 0 15px rgba(6,182,212,0.4);
+transition:all .3s;
+}
+
+.glow-btn:hover{
+box-shadow:0 0 35px rgba(6,182,212,0.9);
+transform:translateY(-3px);
+}
+
+/* glass card */
+
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+}
+
+/* animated gradient border */
+
+.code-wrapper{
+padding:2px;
+border-radius:20px;
+background:linear-gradient(270deg,#3b82f6,#06b6d4,#8b5cf6,#3b82f6);
+background-size:400% 400%;
+animation:gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+/* terminal dots */
+
+.circle{
+width:12px;
+height:12px;
+border-radius:50%;
+}
+
+.red{background:#ef4444}
+.yellow{background:#facc15}
+.green{background:#22c55e}
+
+/* floating animation */
+
+.float-btn{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+100%{transform:translateY(0)}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+
+<nav class="flex justify-between items-center px-10 py-6 sticky top-0 z-50 bg-[#020617]/80 backdrop-blur-md">
+
+<div class="text-2xl font-bold text-blue-400">
+&lt;CodesNLogic/&gt;
+</div>
+
+<div class="hidden md:flex gap-12 text-gray-300">
+
+<a href="#">Development</a>
+<a href="#">Training</a>
+<a href="#">Placements</a>
+
+</div>
+
+<button class="glow-btn px-6 py-2 rounded-full">
+Hire Us
+</button>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="px-10 py-20">
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+
+<div>
+
+<span class="border border-cyan-500 px-4 py-1 rounded-full text-xs tracking-widest text-cyan-400">
+ENGINEERING EXCELLENCE
+</span>
+
+<h1 class="text-6xl font-bold mt-6">
+
+Smart Code.<br>
+
+<span class="text-cyan-400">Pure Logic.</span>
+
+</h1>
+
+<p class="text-gray-400 mt-6 max-w-lg">
+
+We architect high-performance software and mentor the next generation of engineers.  
+Our ecosystem eliminates technical debt through clean code and rigorous industry training.
+
+</p>
+
+<div class="mt-10 flex gap-6">
+
+<button class="glow-btn px-8 py-4 rounded-xl float-btn">
+Start a Project
+</button>
+
+<button class="glow-btn px-8 py-4 rounded-xl float-btn">
+Explore Training
+</button>
+
+</div>
+
+</div>
+
+<!-- code card -->
+
+<div class="code-wrapper">
+
+<div class="bg-[#020617] p-8 rounded-2xl">
+
+<div class="flex gap-3 mb-4">
+
+<div class="circle red"></div>
+<div class="circle yellow"></div>
+<div class="circle green"></div>
+
+</div>
+
+<pre class="text-blue-300 text-sm">
+
+const CodesNLogic = {
+
+ mission: "Build. Teach. Place.",
+
+ stack: ["AI","Web3","Cloud"],
+
+ readyToDeploy: true,
+
+ execute: () => "Driving Success"
+
+};
+
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHAT WE DO -->
+
+<section class="px-10 py-20">
+
+<h2 class="text-4xl font-bold mb-12">
+
+What We Do
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass p-8 rounded-2xl glow-btn">
+
+<i class="fas fa-code text-blue-400 text-3xl mb-4"></i>
+
+<h3 class="font-bold text-xl mb-2">
+
+Software Development
+
+</h3>
+
+<p class="text-gray-400 text-sm">
+
+Custom software engineered for the modern era.
+
+</p>
+
+</div>
+
+<div class="glass p-8 rounded-2xl glow-btn">
+
+<i class="fas fa-graduation-cap text-purple-400 text-3xl mb-4"></i>
+
+<h3 class="font-bold text-xl mb-2">
+
+Professional Training
+
+</h3>
+
+<p class="text-gray-400 text-sm">
+
+Immersive training designed for the modern developer.
+
+</p>
+
+</div>
+
+<div class="glass p-8 rounded-2xl glow-btn">
+
+<i class="fas fa-briefcase text-green-400 text-3xl mb-4"></i>
+
+<h3 class="font-bold text-xl mb-2">
+
+Placement Services
+
+</h3>
+
+<p class="text-gray-400 text-sm">
+
+Connecting certified technical talent with global hiring partners.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="border-t border-white/10 px-10 py-8 flex justify-between text-gray-400">
+
+<p>
+
+© 2025 CodesNLogic
+
+</p>
+
+<div class="flex gap-6 text-xl">
+
+<i class="fab fa-twitter"></i>
+<i class="fab fa-github"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</footer>
+
+<script>
+
+particlesJS("particles-js",{
+
+particles:{
+
+number:{value:80},
+
+color:{value:"#60a5fa"},
+
+shape:{type:"circle"},
+
+opacity:{value:0.5},
+
+size:{value:3},
+
+line_linked:{
+enable:true,
+distance:150,
+color:"#60a5fa",
+opacity:0.4
+},
+
+move:{
+enable:true,
+speed:2
+}
+
+}
+
+})
+
+</script>
+
+</body>
+</html>

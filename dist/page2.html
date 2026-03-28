@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Django Mastery | CodesNLogic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        [x-cloak] { display: none !important; }
+        body { background-color: #0b0f1a; color: white; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-[100] bg-[#0b0f1a]/80 backdrop-blur-md border-b border-white/5 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-white">CODES<span class="text-blue-500">N</span>LOGIC</div>
+            <a href="index.html" class="text-xs font-black uppercase tracking-widest text-gray-500 hover:text-white"><i class="fas fa-arrow-left mr-2"></i> Back to Home</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-7">
+                <div class="flex gap-3 mb-8">
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-[9px] font-black tracking-[0.2em] uppercase">90% Projects</span>
+                    <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-[9px] font-black tracking-[0.2em] uppercase">Industry Experts</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-white leading-tight">
+                    Full-Stack with <br> <span class="text-blue-500 underline decoration-white/20">Python Django</span>
+                </h1>
+                <p class="mt-8 text-xl text-gray-400 leading-relaxed max-w-2xl">
+                    Master MVT Architecture, ORM, and build enterprise-grade marketplaces. A complete 360° career transition program.
+                </p>
+                <div class="mt-10 flex items-center gap-8">
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-2xl">
+                        <p class="text-[10px] text-gray-500 uppercase font-black">Limited Offer</p>
+                        <p class="text-3xl font-black text-white">₹9,999 <span class="text-sm text-gray-600 line-through ml-2">₹45,000</span></p>
+                    </div>
+                    <button class="bg-blue-600 hover:bg-blue-500 px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest shadow-2xl shadow-blue-600/30 transition-all">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="glass p-10 rounded-[2.5rem] border border-white/10 relative">
+                    <div class="absolute -top-6 -right-6 bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl animate-pulse">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h4 class="text-xl font-black text-white mb-8 italic">What's Inside:</h4>
+                    <ul class="space-y-5">
+                        <li class="flex gap-4 items-start text-gray-400">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span>100+ Hours of Intensive Live Classes</span>
+                        </li>
+                        <li class="flex gap-4 items-start text-gray-400">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span>24/7 LMS & Recorded Session Access</span>
+                        </li>
+                        <li class="flex gap-4 items-start text-gray-400">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span>Building 5+ Real-World Production Apps</span>
+                        </li>
+                        <li class="flex gap-4 items-start text-gray-400">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span>Weekly Mock Interviews & DSA Sprints</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-950" x-data="{ active: 1 }">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16">The Mastery <span class="text-blue-500">Roadmap</span></h2>
+            
+            <div class="space-y-4">
+                <div class="glass border border-white/10 rounded-2xl overflow-hidden">
+                    <button @click="active = (active === 1 ? 0 : 1)" class="w-full p-6 text-left flex justify-between items-center group">
+                        <span class="font-bold text-lg" :class="active === 1 ? 'text-blue-500' : 'text-white'">01. Python Core Logic</span>
+                        <i class="fas fa-chevron-down transition-transform" :class="active === 1 ? 'rotate-180 text-blue-500' : 'text-gray-600'"></i>
+                    </button>
+                    <div x-show="active === 1" x-collapse class="p-8 bg-black/40 border-t border-white/5">
+                        <ul class="grid md:grid-cols-2 gap-4 text-sm text-gray-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> Walrus Operator & Identifiers</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> Memory Management</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> Higher-Order Functions</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> OOPS Deep-Dive</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass border border-white/10 rounded-2xl overflow-hidden">
+                    <button @click="active = (active === 2 ? 0 : 2)" class="w-full p-6 text-left flex justify-between items-center group">
+                        <span class="font-bold text-lg" :class="active === 2 ? 'text-blue-500' : 'text-white'">02. Django Enterprise (MVT)</span>
+                        <i class="fas fa-chevron-down transition-transform" :class="active === 2 ? 'rotate-180 text-blue-500' : 'text-gray-600'"></i>
+                    </button>
+                    <div x-show="active === 2" x-collapse class="p-8 bg-black/40 border-t border-white/5">
+                        <ul class="grid md:grid-cols-2 gap-4 text-sm text-gray-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> Project vs App Logic</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> Template Engine (Jinja)</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> ORM & Database Schema</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-circle text-[6px] text-blue-500"></i> Middleware & Signals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-3xl font-black uppercase tracking-widest">Industry <span class="text-blue-500">Capstone</span> Projects</h2>
+            <p class="text-gray-500 mt-4 uppercase text-[10px] tracking-[0.4em]">90% Code. 10% Theory.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-[3rem] border border-white/5 flex gap-8 items-center group hover:border-blue-500 transition">
+                <div class="w-20 h-20 bg-blue-600/10 rounded-3xl flex items-center justify-center text-3xl text-blue-500 group-hover:scale-110 transition">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white">Advanced E-Commerce</h4>
+                    <p class="text-sm text-gray-500 mt-2">Stripe integration, product variants, inventory logic, and user dashboards.</p>
+                </div>
+            </div>
+            <div class="glass p-10 rounded-[3rem] border border-white/5 flex gap-8 items-center group hover:border-purple-500 transition">
+                <div class="w-20 h-20 bg-purple-600/10 rounded-3xl flex items-center justify-center text-3xl text-purple-500 group-hover:scale-110 transition">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white">HRMS Portal</h4>
+                    <p class="text-sm text-gray-500 mt-2">Attendance tracking, salary generation, and automated reporting systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

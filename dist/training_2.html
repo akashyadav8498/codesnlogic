@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Academy | Advanced Engineering Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: white; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .roadmap-line { position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #3b82f6, #2dd4bf, transparent); }
+        
+        .batch-card:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.15); transition: all 0.4s ease; }
+        
+        /* Modal Scrollbar */
+        .custom-scroll::-webkit-scrollbar { width: 5px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(45, 212, 191, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+        }
+        .filling-fast { animation: pulse-border 2s infinite; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto sticky top-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="text-2xl font-extrabold tracking-tighter italic">NEXUS<span class="text-blue-500 font-black">ACADEMY</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="cnl.html" class="hover:text-white transition">Agency Home</a>
+            <a href="#batches" class="hover:text-white transition">Upcoming Batches</a>
+            <a href="#curriculum" class="hover:text-white transition">Curriculum</a>
+        </div>
+        <a href="#contact" class="px-5 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-blue-500 hover:text-white transition shadow-lg">Student Login</a>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 md:px-10 pt-20 pb-16 text-center">
+        <span class="px-4 py-1.5 text-[10px] font-bold tracking-[0.3em] text-cyan-400 uppercase border border-cyan-400/30 rounded-full">Skill Up for the Future</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold mt-8 leading-tight">
+            Level Up Your <br>
+            <span class="gradient-text">Engineering Stack.</span>
+        </h1>
+        <p class="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
+            Elite training programs designed by architects at Nexus. Real-world projects, production-grade workflows, and industry recognized roadmaps.
+        </p>
+    </header>
+
+    <section id="batches" class="max-w-7xl mx-auto px-6 md:px-10 py-12">
+        <div class="flex items-center justify-between mb-12">
+            <h2 class="text-3xl font-bold italic">Open Enrollments</h2>
+            <div class="flex space-x-2">
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                <span class="text-xs font-mono text-green-500 uppercase tracking-widest">Live Registration</span>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-[2rem] batch-card relative group flex flex-col h-full border-white/10">
+                <div class="flex justify-between items-start mb-8">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] font-bold rounded-md border border-blue-500/20">NEXT GEN WEB</span>
+                    <span class="text-[10px] font-mono text-gray-500 uppercase">BATCH #FS-101</span>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4">Full Stack Development</h3>
+                <p class="text-gray-400 text-sm mb-8 leading-relaxed">Master Node.js, Next.js, and AWS Architectures. Go from coding to cloud deployment.</p>
+                
+                <div class="space-y-4 mb-10 flex-grow">
+                    <div class="flex items-center text-sm text-gray-300">
+                        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center mr-3">📅</div>
+                        Starts: Jan 28, 2025
+                    </div>
+                    <div class="flex items-center text-sm text-gray-300">
+                        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center mr-3">🕒</div>
+                        09:00 PM - 11:00 PM IST
+                    </div>
+                    <div class="flex items-center text-sm text-gray-300">
+                        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center mr-3">🌐</div>
+                        Online Live (Interactive)
+                    </div>
+                </div>
+
+                <button onclick="openRoadmap('Full Stack')" class="w-full py-4 bg-white text-black font-extrabold rounded-2xl hover:bg-cyan-400 hover:text-black transition-all mb-4">
+                    View Crisp Roadmap
+                </button>
+                <div class="text-center">
+                    <span class="text-[10px] text-red-400 font-bold tracking-widest uppercase">Filling Fast • Only 5 Seats Left</span>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-[2rem] batch-card relative group flex flex-col h-full border-white/10 filling-fast">
+                <div class="flex justify-between items-start mb-8">
+                    <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] font-bold rounded-md border border-purple-500/20">INFRASTRUCTURE</span>
+                    <span class="text-[10px] font-mono text-gray-500 uppercase">BATCH #DO-202</span>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4">DevOps & SRE</h3>
+                <p class="text-gray-400 text-sm mb-8 leading-relaxed">Learn Kubernetes, Terraform, and CI/CD pipelines used by world-class tech giants.</p>
+                
+                <div class="space-y-4 mb-10 flex-grow">
+                    <div class="flex items-center text-sm text-gray-300">
+                        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center mr-3">📅</div>
+                        Starts: Feb 12, 2025
+                    </div>
+                    <div class="flex items-center text-sm text-gray-300">
+                        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center mr-3">📍</div>
+                        Offline (South Delhi Hub)
+                    </div>
+                </div>
+
+                <button onclick="openRoadmap('DevOps')" class="w-full py-4 bg-blue-600 text-white font-extrabold rounded-2xl hover:bg-blue-500 transition-all mb-4 shadow-lg shadow-blue-600/20">
+                    View Crisp Roadmap
+                </button>
+                <div class="text-center">
+                    <span class="text-[10px] text-cyan-400 font-bold tracking-widest uppercase">Corporate Recommended</span>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-[2rem] batch-card relative group flex flex-col h-full border-white/10">
+                <div class="flex justify-between items-start mb-8">
+                    <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-[10px] font-bold rounded-md border border-cyan-500/20">SECURITY</span>
+                    <span class="text-[10px] font-mono text-gray-500 uppercase">BATCH #SEC-04</span>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4">Cyber Security</h3>
+                <p class="text-gray-400 text-sm mb-8 leading-relaxed">Penetration testing, ethical hacking, and secure code audits for modern enterprises.</p>
+                
+                <div class="space-y-4 mb-10 flex-grow text-sm">
+                    <div class="flex items-center text-gray-300">📅 Mar 01, 2025</div>
+                    <div class="flex items-center text-gray-300 text-xs italic">Registration opens in 10 days</div>
+                </div>
+
+                <button onclick="openRoadmap('Cyber Security')" class="w-full py-4 glass text-white/50 font-extrabold rounded-2xl cursor-not-allowed">
+                    Roadmap Locked
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="roadmapModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 backdrop-blur-xl bg-[#0f172a]/90">
+        <div class="glass w-full max-w-4xl max-h-[85vh] overflow-y-auto custom-scroll rounded-[3rem] p-8 md:p-16 relative border-white/10 shadow-2xl">
+            <button onclick="closeRoadmap()" class="absolute top-8 right-8 text-gray-500 hover:text-white text-3xl">&times;</button>
+            
+            <div class="text-center mb-16">
+                <h2 id="modalTitle" class="text-4xl font-extrabold mb-4 italic">Full Stack <span class="gradient-text text-normal">Roadmap</span></h2>
+                <div class="inline-block px-4 py-1 bg-white/5 rounded-full text-xs text-gray-400">Total Duration: 16 Weeks • 12 Industry Projects</div>
+            </div>
+
+            <div class="relative max-w-2xl mx-auto">
+                <div class="roadmap-line"></div>
+                
+                <div class="relative pl-16 mb-16">
+                    <div class="absolute left-[8px] top-1 w-[26px] h-[26px] bg-[#0f172a] border-4 border-blue-500 rounded-full z-10 shadow-[0_0_15px_rgba(59,130,246,0.8)]"></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Weeks 1-4: The Foundation Phase</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Mastering the structural elements. We don't just teach code; we teach system thinking.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-blue-400 font-mono">Semantic HTML/CSS</span>
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-blue-400 font-mono">JS Engine & V8</span>
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-blue-400 font-mono">Git Flow</span>
+                    </div>
+                </div>
+
+                <div class="relative pl-16 mb-16">
+                    <div class="absolute left-[8px] top-1 w-[26px] h-[26px] bg-[#0f172a] border-4 border-cyan-400 rounded-full z-10 shadow-[0_0_15px_rgba(45,212,191,0.8)]"></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Weeks 5-10: Scalable Engineering</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Building logic-heavy applications with React/Next and production-ready Backends.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-cyan-400 font-mono">State Management</span>
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-cyan-400 font-mono">Node.js Microservices</span>
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-cyan-400 font-mono">DB Modeling</span>
+                    </div>
+                </div>
+
+                <div class="relative pl-16">
+                    <div class="absolute left-[8px] top-1 w-[26px] h-[26px] bg-[#0f172a] border-4 border-white rounded-full z-10 shadow-[0_0_15px_rgba(255,255,255,0.4)]"></div>
+                    <h4 class="text-xl font-bold text-white mb-2">Weeks 11-16: Cloud & Production</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Shipping to real servers. Testing, monitoring, and professional portfolio building.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-gray-300 font-mono">Docker/K8s</span>
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-gray-300 font-mono">AWS/Vercel</span>
+                        <span class="px-2 py-1 bg-white/5 rounded border border-white/10 text-[10px] text-gray-300 font-mono">Unit Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 p-8 rounded-3xl bg-gradient-to-r from-blue-600/20 to-cyan-500/20 border border-blue-500/20 text-center">
+                <h4 class="text-xl font-bold mb-4">Secure your career transformation</h4>
+                <a href="#contact" onclick="closeRoadmap()" class="px-8 py-3 bg-white text-black font-bold rounded-xl hover:bg-cyan-400 transition">Apply for Batch Now</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-24">
+        <div class="glass p-10 md:p-16 rounded-[3rem] border-white/10 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/20 blur-[80px]"></div>
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-extrabold italic mb-4">Join the <span class="gradient-text">Cohort.</span></h2>
+                <p class="text-gray-400">Our team will contact you for a technical assessment within 24 hours.</p>
+            </div>
+            <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl outline-none focus:border-cyan-400 transition text-sm">
+                    <input type="email" placeholder="Work Email" class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl outline-none focus:border-cyan-400 transition text-sm">
+                </div>
+                <select class="w-full bg-[#1e293b] border border-white/10 p-4 rounded-2xl outline-none focus:border-cyan-400 transition text-sm text-gray-400">
+                    <option>Select Your Course of Interest</option>
+                    <option>Full Stack Web Mastery</option>
+                    <option>DevOps & SRE</option>
+                    <option>Cyber Security</option>
+                </select>
+                <textarea rows="3" placeholder="Tell us about your current technical experience..." class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl outline-none focus:border-cyan-400 transition text-sm"></textarea>
+                <button class="w-full bg-blue-600 py-4 rounded-2xl font-extrabold text-lg hover:bg-blue-500 transition shadow-xl shadow-blue-600/20">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-10 py-10 border-t border-white/5 text-center text-sm text-gray-500">
+        <p>&copy; 2025 Nexus Academy • Part of Nexus Software Agency</p>
+    </footer>
+
+    <script>
+        function openRoadmap(title) {
+            document.getElementById('modalTitle').innerHTML = title + " <span class='gradient-text italic'>Roadmap</span>";
+            document.getElementById('roadmapModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeRoadmap() {
+            document.getElementById('roadmapModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>

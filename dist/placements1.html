@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placements & Success | CodesNLogic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        [x-cloak] { display: none !important; }
+        body { background-color: #0b0f1a; color: white; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+        .marquee { display: flex; overflow: hidden; user-select: none; gap: 2rem; }
+        .marquee-content { flex-shrink: 0; display: flex; justify-content: space-around; min-width: 100%; gap: 2rem; animation: scroll 20s linear infinite; }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+        .success-card:hover { transform: translateY(-10px); border-color: rgba(59, 130, 246, 0.5); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-[100] bg-[#0b0f1a]/90 backdrop-blur-md border-b border-white/5 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-white">CODES<span class="text-blue-500">N</span>LOGIC</div>
+            <div class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="python-django.html" class="hover:text-white transition">Django Mastery</a>
+                <a href="#" class="text-blue-500">Placements</a>
+            </div>
+            <button class="bg-blue-600 px-6 py-2 rounded-lg font-bold text-xs uppercase transition shadow-lg shadow-blue-600/20">Hire Talent</button>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-8xl font-black text-white leading-none italic uppercase">
+                Your Career, <br> Our <span class="text-blue-500">Commitment.</span>
+            </h1>
+            <p class="mt-8 text-xl text-gray-400 max-w-2xl mx-auto">
+                From basic syntax to Tier-1 offers. See how our 17,000+ placed alumni transformed their professional logic.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 border-y border-white/5 bg-white/[0.01]">
+        <div class="marquee">
+            <div class="marquee-content font-black text-2xl text-gray-700 tracking-tighter uppercase italic">
+                <span>Google</span> <span>Amazon</span> <span>Microsoft</span> <span>Adobe</span> <span>Meta</span> <span>Netflix</span> <span>TCS</span> <span>Infosys</span> <span>Zomato</span>
+            </div>
+            <div class="marquee-content font-black text-2xl text-gray-700 tracking-tighter uppercase italic">
+                <span>Google</span> <span>Amazon</span> <span>Microsoft</span> <span>Adobe</span> <span>Meta</span> <span>Netflix</span> <span>TCS</span> <span>Infosys</span> <span>Zomato</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="success-card glass p-8 rounded-[2.5rem] border border-white/10 transition-all duration-500">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John" class="w-16 h-16 rounded-2xl bg-blue-500/10" alt="Alumni">
+                    <span class="text-[10px] font-black bg-green-500/20 text-green-500 px-3 py-1 rounded-full uppercase">Placed @ Amazon</span>
+                </div>
+                <h4 class="text-xl font-bold text-white">Akshat Sharma</h4>
+                <p class="text-blue-500 text-xs font-black uppercase tracking-widest mt-1">SDE-II</p>
+                <p class="mt-6 text-gray-500 text-sm italic leading-relaxed">
+                    "The 250+ LeetCode formula at CodesNLogic changed my perspective on DSA. I didn't just learn to code; I learned to solve."
+                </p>
+                <div class="mt-8 pt-6 border-t border-white/5 flex justify-between items-center">
+                    <span class="text-gray-600 text-[10px] font-bold uppercase tracking-widest">LPA: 28.5 Lakhs</span>
+                    <i class="fab fa-linkedin text-gray-600 hover:text-blue-500 transition cursor-pointer"></i>
+                </div>
+            </div>
+
+            <div class="success-card glass p-8 rounded-[2.5rem] border border-white/10 transition-all duration-500">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" class="w-16 h-16 rounded-2xl bg-purple-500/10" alt="Alumni">
+                    <span class="text-[10px] font-black bg-blue-500/20 text-blue-500 px-3 py-1 rounded-full uppercase">Placed @ Adobe</span>
+                </div>
+                <h4 class="text-xl font-bold text-white">Akanksha Gupta</h4>
+                <p class="text-purple-500 text-xs font-black uppercase tracking-widest mt-1">Full-Stack Developer</p>
+                <p class="mt-6 text-gray-500 text-sm italic leading-relaxed">
+                    "Building 25+ real projects gave me the confidence to ace technical rounds. The industry-focused curriculum is unmatched."
+                </p>
+                <div class="mt-8 pt-6 border-t border-white/5 flex justify-between items-center">
+                    <span class="text-gray-600 text-[10px] font-bold uppercase tracking-widest">LPA: 18.0 Lakhs</span>
+                    <i class="fab fa-linkedin text-gray-600 hover:text-blue-500 transition cursor-pointer"></i>
+                </div>
+            </div>
+
+            <div class="success-card glass p-8 rounded-[2.5rem] border border-white/10 transition-all duration-500">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mike" class="w-16 h-16 rounded-2xl bg-orange-500/10" alt="Alumni">
+                    <span class="text-[10px] font-black bg-orange-500/20 text-orange-500 px-3 py-1 rounded-full uppercase">Placed @ Microsoft</span>
+                </div>
+                <h4 class="text-xl font-bold text-white">Yash Tyagi</h4>
+                <p class="text-orange-500 text-xs font-black uppercase tracking-widest mt-1">Backend Architect</p>
+                <p class="mt-6 text-gray-500 text-sm italic leading-relaxed">
+                    "I joined from a non-tech background. Within 6 months, I was deploying Django apps on AWS. Life-changing experience!"
+                </p>
+                <div class="mt-8 pt-6 border-t border-white/5 flex justify-between items-center">
+                    <span class="text-gray-600 text-[10px] font-bold uppercase tracking-widest">LPA: 24.2 Lakhs</span>
+                    <i class="fab fa-linkedin text-gray-600 hover:text-blue-500 transition cursor-pointer"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-center">
+            <div>
+                <h2 class="text-4xl font-black text-white italic">90%</h2>
+                <p class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-2">Hands-on Projects</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-black text-white italic">₹12L</h2>
+                <p class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-2">Average Package</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-black text-white italic">100+</h2>
+                <p class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-2">Hiring Partners</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-black text-white italic">24/7</h2>
+                <p class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-2">Mentor Support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32">
+        <div class="max-w-4xl mx-auto px-6 text-center glass p-16 rounded-[4rem] border border-blue-600/20">
+            <h2 class="text-4xl font-black mb-6 italic">Next Cohort starts <span class="text-blue-500">1st Oct</span></h2>
+            <p class="text-gray-400 mb-10">Don't just watch success stories. Be one.</p>
+            <button class="bg-blue-600 px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-2xl shadow-blue-600/40">Apply for Scholarship</button>
+        </div>
+    </section>
+
+</body>
+</html>

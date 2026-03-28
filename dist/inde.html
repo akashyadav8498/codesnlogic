@@ -1,0 +1,64 @@
+<div x-data="{active:0}" class="max-w-7xl mx-auto px-6 overflow-hidden">
+
+<div class="flex transition-transform duration-700"
+:style="'transform: translateX(-' + active*100 + '%)'">
+
+<!-- Card 1 -->
+<div class="w-full md:w-1/3 p-4">
+<div class="glass p-8 rounded-3xl border border-blue-500/30">
+<p class="text-gray-300 mb-4">
+"CodesNLogic didn't just build our app; they engineered a logical architecture that scaled perfectly."
+</p>
+<h4 class="font-bold">Samantha Green</h4>
+<span class="text-blue-400 text-sm">CTO, Nexus Solutions</span>
+</div>
+</div>
+
+<!-- Card 2 -->
+<div class="w-full md:w-1/3 p-4">
+<div class="glass p-8 rounded-3xl border border-purple-500/30">
+<p class="text-gray-300 mb-4">
+"We hired developers trained by CNL. Their logic and coding skills were exceptional."
+</p>
+<h4 class="font-bold">Michael Chen</h4>
+<span class="text-purple-400 text-sm">Lead Architect, InnovateX</span>
+</div>
+</div>
+
+<!-- Card 3 -->
+<div class="w-full md:w-1/3 p-4">
+<div class="glass p-8 rounded-3xl border border-green-500/30">
+<p class="text-gray-300 mb-4">
+"The placement team at CodesNLogic connects us with highly capable engineers."
+</p>
+<h4 class="font-bold">Omar Williams</h4>
+<span class="text-green-400 text-sm">HR Head, CloudScale</span>
+</div>
+</div>
+
+<!-- Card 4 -->
+<div class="w-full md:w-1/3 p-4">
+<div class="glass p-8 rounded-3xl border border-blue-500/30">
+<p class="text-gray-300 mb-4">
+"Excellent training and real world projects."
+</p>
+<h4 class="font-bold">David Lee</h4>
+<span class="text-blue-400 text-sm">Product Manager</span>
+</div>
+</div>
+
+</div>
+
+<!-- Buttons -->
+<div class="flex justify-center gap-4 mt-8">
+
+<button @click="active=0" class="px-4 py-2 bg-blue-600 rounded-lg">
+1</button>
+
+<button @click="active=1" class="px-4 py-2 bg-blue-600 rounded-lg">
+2
+</button>
+
+</div>
+
+</div>

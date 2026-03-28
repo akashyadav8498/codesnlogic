@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodesNLogic | Development • Training • Placements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 
+  <section id="training" class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+        <div class="bg-blue-600 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold leading-tight text-white">Engineering Training for Corporate Teams</h2>
+                <p class="mt-6 text-blue-100 text-lg">We don't just teach code; we teach software craftsmanship. Our custom curriculum focuses on real-world problem solving and production-grade standards.</p>
+                <ul class="mt-8 space-y-4">
+                    <li class="flex items-center space-x-3"><span class="bg-blue-400/30 p-1 rounded-full text-white">✓</span> <span>On-site or Remote Workshops</span></li>
+                    <li class="flex items-center space-x-3"><span class="bg-blue-400/30 p-1 rounded-full text-white">✓</span> <span>Customized Curriculum</span></li>
+                    <li class="flex items-center space-x-3"><span class="bg-blue-400/30 p-1 rounded-full text-white">✓</span> <span>Hands-on Live Coding</span></li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 w-full bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                <h4 class="text-xl font-bold mb-4">Request Syllabus</h4>
+                <form class="space-y-4">
+                    <input type="email" placeholder="Work Email" class="w-full bg-white/10 border border-white/20 p-3 rounded-lg outline-none focus:border-white transition">
+                    <select class="w-full bg-slate-900 border border-white/20 p-3 rounded-lg outline-none focus:border-white transition">
+                        <option>Fullstack Development</option>
+                        <option>DevOps & Cloud</option>
+                        <option>App Architecture</option>
+                    </select>
+                    <button class="w-full bg-white text-blue-600 font-bold py-3 rounded-lg hover:bg-blue-50 transition">Get Brochure</button>
+                </form>
+            </div>
+        </div>
+    </section> 
+    -->
+
+    <section class="pt-32 pb-20 bg-[#0b0f1a] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 text-center relative z-10">
+        <span class="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em]">
+            Engineering Academy
+        </span>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mt-8 tracking-tight leading-tight">
+            Architect Your <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Professional Logic.</span>
+        </h1>
+        <p class="mt-8 text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+            Stop collecting certificates. Start building production-ready infrastructure. Our training is designed to bridge the gap between "knowing syntax" and "engineering systems."
+        </p>
+    </div>
+</section>
+
+<section class="py-20 bg-[#0b0f1a]" x-data="{ selectedTab: 'development' }">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <button @click="selectedTab = 'development'" 
+                :class="selectedTab === 'development' ? 'bg-blue-600 text-white' : 'glass text-gray-400 border-white/5'"
+                class="px-8 py-3 rounded-xl font-bold transition-all duration-300">
+                Full-Stack Logic
+            </button>
+            <button @click="selectedTab = 'devops'" 
+                :class="selectedTab === 'devops' ? 'bg-purple-600 text-white' : 'glass text-gray-400 border-white/5'"
+                class="px-8 py-3 rounded-xl font-bold transition-all duration-300">
+                DevOps & Cloud
+            </button>
+            <button @click="selectedTab = 'data'" 
+                :class="selectedTab === 'data' ? 'bg-green-600 text-white' : 'glass text-gray-400 border-white/5'"
+                class="px-8 py-3 rounded-xl font-bold transition-all duration-300">
+                Data Engineering
+            </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <template x-if="selectedTab === 'development'">
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-b from-blue-500 to-transparent rounded-[2rem] opacity-20 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="relative glass p-8 rounded-[2rem] border border-white/10 h-full flex flex-col">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-500 mb-6">
+                            <i class="fab fa-react text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Modern Frontend Architect</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-8">Master React, Next.js, and State Management. Focus on performance logic and scalable component design.</p>
+                        
+                        <div class="mt-auto space-y-4">
+                            <div class="flex items-center gap-3 text-xs text-gray-500 font-bold uppercase tracking-widest">
+                                <span class="text-blue-500">●</span> 12 Weeks
+                                <span class="text-blue-500">●</span> Job Ready
+                            </div>
+                            <a href="#" class="block text-center py-4 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-blue-600 transition-all">View Roadmap</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <template x-if="selectedTab === 'devops'">
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-b from-purple-500 to-transparent rounded-[2rem] opacity-20 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="relative glass p-8 rounded-[2rem] border border-white/10 h-full flex flex-col">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-600/20 border border-purple-500/30 flex items-center justify-center text-purple-500 mb-6">
+                            <i class="fas fa-server text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Cloud & CI/CD Masterclass</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-8">Deploying is easy; scaling is hard. Learn AWS, Docker, Kubernetes, and automated deployment logic.</p>
+                        
+                        <div class="mt-auto space-y-4">
+                            <div class="flex items-center gap-3 text-xs text-gray-500 font-bold uppercase tracking-widest">
+                                <span class="text-purple-500">●</span> 8 Weeks
+                                <span class="text-purple-500">●</span> Production Scale
+                            </div>
+                            <a href="#" class="block text-center py-4 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-purple-600 transition-all">View Roadmap</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            </div>
+    </div>
+</section>
+
+<section class="py-24 bg-slate-950 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-white leading-tight">
+                    The Logic Behind <br>
+                    <span class="text-blue-500">Our Methodology</span>
+                </h2>
+                <div class="mt-4 h-2 w-20 bg-blue-600 rounded-full"></div>
+                
+                <ul class="mt-12 space-y-8">
+                    <li class="flex gap-6">
+                        <div class="text-blue-500 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                        <div>
+                            <h4 class="text-white font-bold">Zero "Hello World" Projects</h4>
+                            <p class="text-gray-500 text-sm mt-1">We don't build toy apps. Students work on actual production-level modules used in real software.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-6">
+                        <div class="text-purple-500 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                        <div>
+                            <h4 class="text-white font-bold">Code Review Culture</h4>
+                            <p class="text-gray-500 text-sm mt-1">Every line of code you write is reviewed by a Senior Engineer. Learn how to handle criticism and improve.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass p-1 rounded-[2.5rem] border-white/10">
+                <div class="bg-[#0b0f1a] rounded-[2.4rem] p-10">
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/5">
+                            <span class="text-gray-400">Phase 01</span>
+                            <span class="text-white font-bold">Logical Fundamentals</span>
+                            <i class="fas fa-check text-green-500"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-blue-600/10 rounded-xl border border-blue-500/20">
+                            <span class="text-gray-400">Phase 02</span>
+                            <span class="text-white font-bold">System Architecture</span>
+                            <span class="text-blue-500 animate-pulse text-xs uppercase font-black">In Progress</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/5 opacity-50">
+                            <span class="text-gray-400">Phase 03</span>
+                            <span class="text-white font-bold">Production Deployment</span>
+                            <i class="fas fa-lock text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  </body>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</html>

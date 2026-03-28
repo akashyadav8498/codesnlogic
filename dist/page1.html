@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodesNLogic | India's Most Intensive Tech Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        [x-cloak] { display: none !important; }
+        body { background-color: #0b0f1a; color: white; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .text-gradient { background: linear-gradient(to right, #3b82f6, #a855f7); background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-[100] bg-[#0b0f1a]/80 backdrop-blur-md border-b border-white/5 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-white">CODES<span class="text-blue-500">N</span>LOGIC</div>
+            <div class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">
+                <a href="#" class="hover:text-blue-500 transition">Home</a>
+                <a href="#courses" class="hover:text-blue-500 transition">Courses</a>
+                <a href="#" class="hover:text-blue-500 transition">Placements</a>
+                <a href="#" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+            <button class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-lg font-bold text-xs uppercase tracking-widest transition shadow-lg shadow-blue-600/20">Enroll Now</button>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-600/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <span class="text-blue-500 font-black text-[10px] uppercase tracking-[0.4em]">Advanced Learning Path</span>
+                <h1 class="text-6xl md:text-8xl font-black text-white leading-[0.9] mt-6">
+                    CRACK THE <br> <span class="text-gradient">CODE.</span>
+                </h1>
+                <p class="mt-8 text-xl text-gray-400 max-w-lg leading-relaxed">
+                    India's most intensive Engineering Academy. Master 25+ projects, 250+ LeetCode problems, and get hire-ready for Top MNCs.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <button class="bg-white text-black px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-blue-500 hover:text-white transition-all duration-300">Explore Courses</button>
+                    <button class="glass border border-white/10 px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-white/5 transition">Book A Demo</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-6 relative">
+                <div class="glass p-10 rounded-[2.5rem] border border-white/10 text-center group hover:border-blue-500/50 transition">
+                    <h3 class="text-5xl font-black text-blue-500 group-hover:scale-110 transition">20k+</h3>
+                    <p class="text-gray-500 text-[10px] font-black uppercase tracking-widest mt-4">Trained Students</p>
+                </div>
+                <div class="glass p-10 rounded-[2.5rem] border border-white/10 text-center translate-y-12 group hover:border-purple-500/50 transition">
+                    <h3 class="text-5xl font-black text-purple-500 group-hover:scale-110 transition">17k+</h3>
+                    <p class="text-gray-500 text-[10px] font-black uppercase tracking-widest mt-4">Placed Alumni</p>
+                </div>
+                <div class="glass p-10 rounded-[2.5rem] border border-white/10 text-center group hover:border-green-500/50 transition">
+                    <h3 class="text-5xl font-black text-green-500 group-hover:scale-110 transition">25+</h3>
+                    <p class="text-gray-500 text-[10px] font-black uppercase tracking-widest mt-4">Live Projects</p>
+                </div>
+                <div class="glass p-10 rounded-[2.5rem] border border-white/10 text-center translate-y-12 group hover:border-orange-500/50 transition">
+                    <h3 class="text-5xl font-black text-orange-500 group-hover:scale-110 transition">100%</h3>
+                    <p class="text-gray-500 text-[10px] font-black uppercase tracking-widest mt-4">Live Classes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-20">
+            <h2 class="text-4xl font-black uppercase tracking-tighter">The <span class="text-blue-500">Hire-Ready</span> Formula</h2>
+            <div class="h-1.5 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-transparent rounded-2xl blur opacity-20 group-hover:opacity-50 transition"></div>
+                <div class="relative glass p-8 rounded-2xl border border-white/10 h-full">
+                    <h4 class="text-xl font-black text-white italic">01. Coding Mastery</h4>
+                    <p class="text-gray-500 mt-4 text-sm leading-relaxed">250+ Leetcode questions, Data Structures (DSA), and Algorithm optimization logic.</p>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-transparent rounded-2xl blur opacity-20 group-hover:opacity-50 transition"></div>
+                <div class="relative glass p-8 rounded-2xl border border-white/10 h-full">
+                    <h4 class="text-xl font-black text-white italic">02. Systems Design</h4>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed">Scaling applications, DevOps pipelines, Docker, and Cloud Deployment on AWS.</p>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-green-600 to-transparent rounded-2xl blur opacity-20 group-hover:opacity-50 transition"></div>
+                <div class="relative glass p-8 rounded-2xl border border-white/10 h-full">
+                    <h4 class="text-xl font-black text-white italic">03. Career Sprints</h4>
+                    <p class="text-gray-500 mt-4 text-sm leading-relaxed">Mock HR interviews, Resume building, and direct Referrals to Tier-1 companies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

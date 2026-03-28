@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodesNLogic | Development • Training • Placements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  </head>
+<body>
+ <!-- ========================= NAVBAR START ========================== -->
+    <nav
+      class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md"
+    >
+    <a href="index.html">
+      <div class="flex items-center group cursor-pointer">
+        <div
+          class="text-2xl font-mono font-bold tracking-tighter flex items-center"
+        >
+          <span class="text-blue-500 mr-1">&lt;</span>
+          <span class="text-white">Codes</span>
+          <span class="text-blue-500 font-black">N</span>
+          <span class="text-white">Logic</span>
+          <span class="text-blue-500 ml-1">/&gt;</span>
+        </div>
+      </div>
+     </a>
+      <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+        <a href="development.html" class="hover:text-blue-400 transition"
+          >Development</a
+        >
+        <a href="training.html" class="hover:text-blue-400 transition">Training</a>
+        <a href="placements.html" class="hover:text-blue-400 transition"
+          >Placements</a
+        >
+      </div>
+
+      <a
+        href="#contact"
+        class="px-6 py-2 bg-blue-600 rounded-full text-sm font-semibold hover:bg-blue-500 transition shadow-lg shadow-blue-600/20"
+      >
+        Hire Us
+      </a>
+    </nav>
+    <!-- ========================= NAVBAR END ========================== -->   
+
+<section id="software-sec" class="max-w-7xl mx-auto px-6 py-24" x-data="{ activeTab: 'web' }">
+    <div class="mb-16">
+        <div class="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center text-blue-500 mb-8 border border-blue-500/30">
+            <i class="fas fa-laptop-code text-3xl"></i>
+        </div>
+        <h3 class="text-4xl md:text-5xl font-bold mb-6">Software Development</h3>
+        <p class="text-gray-400 text-lg leading-relaxed max-w-3xl">
+            Building robust digital architectures with precision and scale. 
+            We transform complex logic into high-performance software solutions tailored for modern business needs.
+        </p>
+    </div>
+
+    <div class="w-full">
+        <ul class="flex border-b border-white/10 mb-10 space-x-8 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <li class="relative">
+                <button @click="activeTab = 'web'" 
+                    :class="activeTab === 'web' ? 'text-blue-500' : 'text-gray-500 hover:text-gray-300'"
+                    class="pb-5 text-sm font-bold uppercase tracking-widest transition-all duration-300 outline-none">
+                    Web Engineering
+                </button>
+                <div x-show="activeTab === 'web'" 
+                     x-transition:enter="transition duration-300"
+                     class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 shadow-[0_-4px_12px_rgba(59,130,246,0.6)]"></div>
+            </li>
+            <li class="relative">
+                <button @click="activeTab = 'mobile'" 
+                    :class="activeTab === 'mobile' ? 'text-blue-500' : 'text-gray-500 hover:text-gray-300'"
+                    class="pb-5 text-sm font-bold uppercase tracking-widest transition-all duration-300 outline-none">
+                    Mobile Solutions
+                </button>
+                <div x-show="activeTab === 'mobile'" 
+                     x-transition:enter="transition duration-300"
+                     class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 shadow-[0_-4px_12px_rgba(59,130,246,0.6)]"></div>
+            </li>
+            <li class="relative">
+                <button @click="activeTab = 'cloud'" 
+                    :class="activeTab === 'cloud' ? 'text-blue-500' : 'text-gray-500 hover:text-gray-300'"
+                    class="pb-5 text-sm font-bold uppercase tracking-widest transition-all duration-300 outline-none">
+                    Cloud Systems
+                </button>
+                <div x-show="activeTab === 'cloud'" 
+                     x-transition:enter="transition duration-300"
+                     class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 shadow-[0_-4px_12px_rgba(59,130,246,0.6)]"></div>
+            </li>
+        </ul>
+
+        <div class="relative min-h-[350px]">
+            <div x-show="activeTab === 'web'" 
+                 x-transition:enter="transition ease-out duration-400" 
+                 x-transition:enter-start="opacity-0 translate-y-8" 
+                 x-transition:enter-end="opacity-100 translate-y-0" 
+                 class="glass p-8 md:p-12 rounded-[2.5rem] border-blue-500/20 w-full">
+                <div class="flex items-center gap-5 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                        <i class="fas fa-globe text-blue-500 text-xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-white">Web Engineering</h4>
+                </div>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    We develop high-speed, SEO-optimized web applications using the MERN stack. From enterprise dashboards to complex SaaS platforms, we focus on modular logic and seamless user experiences.
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-400">
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> React & Next.js SPAs
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Headless CMS Integration
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> REST & GraphQL APIs
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Progressive Web Apps
+                    </li>
+                </ul>
+            </div>
+
+            <div x-show="activeTab === 'mobile'" x-cloak
+                 x-transition:enter="transition ease-out duration-400" 
+                 x-transition:enter-start="opacity-0 translate-y-8" 
+                 x-transition:enter-end="opacity-100 translate-y-0" 
+                 class="glass p-8 md:p-12 rounded-[2.5rem] border-blue-500/20 w-full">
+                <div class="flex items-center gap-5 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-blue-500 text-xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-white">Mobile Solutions</h4>
+                </div>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    Architecture-first mobile development for iOS and Android. We build native-performance cross-platform apps that integrate deeply with device hardware and maintain flawless logic offline.
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-400">
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> React Native / Flutter
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Native Module Bridge
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Push Notifications
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Offline-First UX
+                    </li>
+                </ul>
+            </div>
+
+            <div x-show="activeTab === 'cloud'" x-cloak
+                 x-transition:enter="transition ease-out duration-400" 
+                 x-transition:enter-start="opacity-0 translate-y-8" 
+                 x-transition:enter-end="opacity-100 translate-y-0" 
+                 class="glass p-8 md:p-12 rounded-[2.5rem] border-blue-500/20 w-full">
+                <div class="flex items-center gap-5 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                        <i class="fas fa-cloud text-blue-500 text-xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-white">Cloud Systems</h4>
+                </div>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                    Scaling your logic across the globe. We design serverless architectures and microservices on AWS and Azure that handle millions of requests with zero downtime.
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-400">
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> AWS & Azure Serverless
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Docker & Kubernetes
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> CI/CD DevOps Pipelines
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                        <i class="fas fa-check-circle text-blue-500"></i> Auto-scaling Logic
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</html>
